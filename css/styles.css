@@ -396,7 +396,7 @@ body {
 
 .customer-list {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   row-gap: 72px;
@@ -437,17 +437,19 @@ body {
 .footer {
   color: var(--accent-background-color);
   background-color: var(--dakr-overlays-headings);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 96px 0px;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
+}
+
+.footer-logo-slogan {
+  /* display: block; */
+  /* text-align: center; */
 }
 .footer-logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -456,6 +458,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: inherit;
+  margin-bottom: 16px;
 }
 
 .footer-logo > span {
@@ -463,17 +466,19 @@ body {
 }
 
 .footer-text {
-  margin-top: 16px;
-  max-width: 264px;
+  align-self: center;
+  text-align: left;
+  max-width: 268px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 /* ========== Media ========== */
 
 .social-media {
-  margin-left: 120px;
 }
 .social-media-title {
   font-weight: 500;
@@ -489,6 +494,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .social-media-item {
@@ -498,7 +504,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -518,7 +523,8 @@ body {
 /* ========== Subscription ========== */
 
 .subscription-wrap {
-  margin-left: 80px;
+/* width: 100%; */
+  
 }
 .subscription-text {
   font-weight: 500;
@@ -530,15 +536,18 @@ body {
 }
 
 .subscription-form {
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
+
+  /* display: flex;
+  flex-direction: column;
+ 
+ 
   align-items: center;
-  gap: 24px;
+  gap: 24px; */
 }
 
 .subscription-form-input {
-  width: 264px;
+
+  width: 100%;
   height: 40px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -547,6 +556,7 @@ body {
   outline: none;
   padding: 8px 16px;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscription-form-input::placeholder {
@@ -561,11 +571,10 @@ body {
 }
 
 .subscribe-btn {
-  position: relative;
+  margin: 0 auto;
   display: flex;
   align-content: center;
-  width: 165px;
-  height: 40px;
+  gap: 16px;
   padding: 8px 24px;
   font-weight: 500;
   font-size: 16px;
@@ -585,12 +594,8 @@ body {
 }
 
 .subscribe-btn-icon {
-  position: absolute;
   fill: #f4f4fd;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-}
+ }
 
 /* =========================================Backdrop========================================= */
 
