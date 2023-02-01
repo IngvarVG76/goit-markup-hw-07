@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+  .open-menu-btn {
+    display: none;
+  }
+  .header-contacts {
+    display: block;
+  }
+  .solution-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
+  /*================================ Secrtion 2 Main principles ================================*/
+
+  .principles-container {
+    padding: 96px 0px;
+  }
+  .principles-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .principles-item {
+    max-width: 356px;
+  }
+
+  .principles-title {
+    text-align: start;
+  }
+  /*=============================== NOT SHOWN Section 3 What are we doing ===============================*/
+
+  /*==================================== Section 4 Our Team ====================================*/
+
+  .team-container.container {
+    max-width: 660px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  /*====================================== Customers section ======================================*/
+
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .customer-item {
+    width: calc(100% - 16px) / 2;
+  }
+}
+
+/*====================================== Customers section ======================================*/
+
+.customers-container.container {
+  max-width: 660px;
+}

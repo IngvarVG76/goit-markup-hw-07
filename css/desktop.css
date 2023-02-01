@@ -1,3 +1,13 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 768px;
+  }
+  
+  
+}
+
+
+
 :root {
   --primary-brand-color: #4d5ae5;
   --pressed-state-color: #404bbf;
@@ -82,6 +92,10 @@ body {
   border-bottom: 1px solid var(--accent-background-color);
 }
 
+.header-nav-conteiner {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -101,10 +115,6 @@ body {
   color: var(--primary-brand-color);
 }
 
-.header-nav-conteiner {
-  display: flex;
-  align-items: center;
-}
 
 .header-list {
   display: flex;
