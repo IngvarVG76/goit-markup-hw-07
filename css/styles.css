@@ -139,6 +139,131 @@ body {
 
 /*========================================== /Header ==========================================*/
 
+/* ================================= Mobile menu Navigation ================================= */
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 40px 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.close-menu-btn-icon {
+  fill: #000000;
+}
+
+.mobile-menu-wrap {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.mobile-menu-navigation {
+}
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-menu-item {
+}
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: #404bbf;
+}
+
+.mobile-menu-link.current {
+  color: #404bbf;
+}
+
+/* ========== Mobile Menu Contacts ========== */
+
+.mobile-menu-contact-tel {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+  letter-spacing: 0.01em;
+  color: #4d5ae5;
+  margin-bottom: 40px;
+}
+
+.mobile-menu-contact-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-bottom: 48px;
+}
+
+.mobile-menu-contact-link:hover,
+.mobile-menu-contact-link:focus {
+  color: #4d5ae5;
+}
+
+/* ========== Mobile Menu Media ========== */
+
+.mobile-social-media-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 328px;
+}
+.mobile-social-media-item {
+}
+.mobile-social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.mobile-social-media-icon {
+  fill: #f4f4fd;
+}
+
 /* =====================Section 1 Effective Solutions for Your Business===================== */
 
 .solutions {
@@ -523,8 +648,6 @@ body {
 /* ========== Subscription ========== */
 
 .subscription-wrap {
-/* width: 100%; */
-  
 }
 .subscription-text {
   font-weight: 500;
@@ -536,7 +659,6 @@ body {
 }
 
 .subscription-form {
-
   /* display: flex;
   flex-direction: column;
  
@@ -546,7 +668,6 @@ body {
 }
 
 .subscription-form-input {
-
   width: 100%;
   height: 40px;
   background-color: inherit;
@@ -595,7 +716,7 @@ body {
 
 .subscribe-btn-icon {
   fill: #f4f4fd;
- }
+}
 
 /* =========================================Backdrop========================================= */
 
@@ -609,14 +730,15 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  height: 584px;
+  width: 392px;
+  /* height: 584px; */
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
