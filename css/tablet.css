@@ -3,26 +3,44 @@
     max-width: 768px;
   }
   .header {
-    padding-top: 24px;
-    padding-bottom: 10px;
+    /* padding-top: 24px;
+    padding-bottom: 10px; */
   }
 
   .header-navigation {
     display: flex;
+    padding-bottom: 10px;
   }
   .open-menu-btn {
     display: none;
   }
-  .header-contacts {
-    display: block;
+  .menu-container {
+    display: none;
   }
+  .header-nav-conteiner {
+    align-items: flex-start;
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+  .header-contacts {
+    display: revert;
+  }
+  .header-contact-item:first-child {
+    /* margin-bottom: 4px; */
+  }
+
+  /* ================== Section 1 Effective Solutions for Your Busines ===================== */
+
   .solution-container {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tablet.jpg);
+    padding-top: 112px;
+    padding-bottom: 108px;
   }
+
   /*================================ Secrtion 2 Main principles ================================*/
 
   .principles-container {
@@ -61,6 +79,9 @@
 
   /*====================================== Customers section ======================================*/
 
+  .customers-container.container {
+    max-width: 660px;
+  }
   .customer-list {
     display: flex;
     flex-wrap: wrap;
@@ -70,13 +91,38 @@
     column-gap: 24px;
   }
 
-  .customer-item {
-    width: calc(100% - 16px) / 2;
+  /*====================================== Footer section ======================================*/
+
+  .footer-container.container {
+    max-width: 660px;
   }
-}
 
-/*====================================== Customers section ======================================*/
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo-slogan {
+    text-align: left;
+    margin-right: 24px;
+  }
 
-.customers-container.container {
-  max-width: 660px;
+  .social-media {
+    text-align: left;
+  }
+
+  .subscription-text {
+    text-align: left;
+  }
+
+  .subscription-form {
+    display: flex;
+  }
+
+  .subscription-form-input {
+    width: 264px;
+    height: 40px;
+
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
 }

@@ -1,15 +1,5 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 428px;
-  }
-
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .header-nav-conteiner {
-    /* padding-top: 24px;
-   padding-bottom: 24px;
-  width: 100%; */
   }
 }
