@@ -2,10 +2,7 @@
   .container {
     max-width: 1158px;
   }
-  .header {
-    /* padding-top: 24px;
-    padding-bottom: 28px; */
-  }
+
   .header-contacts {
     display: flex;
     justify-content: center;
@@ -30,6 +27,8 @@
     line-height: 1.07;
     letter-spacing: 0.02em;
   }
+
+  /* ================== Section 1 Effective Solutions for Your Busines ===================== */
 
   /*================================ Secrtion 2 Main principles ================================*/
 
@@ -92,5 +91,44 @@
   }
   .modal {
     width: 408px;
+  }
+  .solution-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  /*====================================== Potrfolio.html ======================================*/
+
+  .solutions-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .solutions-filter-list {
+    margin-bottom: 72px;
+  }
+
+  .solutions-result {
+    gap: 48px 24px;
+  }
+  .solution-result-item {
+    width: 360px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solution-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
   }
 }

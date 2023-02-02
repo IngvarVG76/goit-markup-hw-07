@@ -2,10 +2,6 @@
   .container {
     max-width: 768px;
   }
-  .header {
-    /* padding-top: 24px;
-    padding-bottom: 10px; */
-  }
 
   .header-navigation {
     display: flex;
@@ -25,21 +21,8 @@
   .header-contacts {
     display: revert;
   }
-  .header-contact-item:first-child {
-    /* margin-bottom: 4px; */
-  }
 
   /* ================== Section 1 Effective Solutions for Your Busines ===================== */
-
-  .solution-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-tablet.jpg);
-    padding-top: 112px;
-    padding-bottom: 108px;
-  }
 
   /*================================ Secrtion 2 Main principles ================================*/
 
@@ -124,5 +107,44 @@
 
     margin-right: 24px;
     margin-bottom: 0;
+  }
+  .solution-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
+  /*====================================== Potrfolio.html ======================================*/
+
+  .solutions-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .solutions-filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .solutions-result {
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+  .solution-result-item {
+    width: 356px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solution-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet@2x.jpg);
   }
 }

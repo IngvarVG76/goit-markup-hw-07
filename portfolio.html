@@ -16,10 +16,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body class="body">
     <!--============================== Header with navigation ==============================-->
-    <header class="header">
+   <header class="header">
       <div class="header-nav-conteiner container">
         <a class="header-logo link" href="./index.html">
           <span>Web</span>Studio
@@ -30,9 +33,7 @@
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header-link link current" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -51,8 +52,98 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="open-menu-btn menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="open-menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-header-open-menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- ================== Mobile menu Navigation ===================== -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="close-menu-btn menu-toggle js-close-menu">
+        <svg class="close-menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-header-close-menu-btn"></use>
+        </svg>
+      </button>
+
+      <div>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link current" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ========== Mobile Menu Contacts ========== -->
+      <div class="menu-bottom">
+        <div>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contact-item">
+              <a class="mobile-menu-contact-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-contact-item">
+              <a
+                class="mobile-menu-contact-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ========== Mobile Menu Media ========== -->
+
+        <div>
+          <ul class="mobile-social-media-list list">
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link link" href="">
+                <svg class="mobile-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link link" href="">
+                <svg class="mobile-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link link" href="">
+                <svg class="mobile-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link link" href="">
+                <svg class="mobile-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <main>
       <!-- ============================== Section 1 Filters ============================== -->
 
@@ -86,6 +177,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/banking-app-interface-concept.jpg 1x, ./images/banking-app-interface-concept@2x.jpg 2x"
                     src="./images/banking-app-interface-concept.jpg"
                     alt="Banking App Interface screenshots"
                     width="360"
@@ -113,6 +205,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/cashless-payment.jpg 1x, ./images/cashless-payment@2x.jpg 2x"
                     src="./images/cashless-payment.jpg"
                     alt="Smartphone and bank terminal"
                     width="360"
@@ -134,6 +227,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/meditaion-app.jpg 1x, ./images/meditaion-app@2x.jpg 2x"
                     src="./images/meditaion-app.jpg"
                     alt="Laptop and smartphone with Meditaion app"
                     width="360"
@@ -155,6 +249,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/taxi-service.jpg 1x, ./images/taxi-service@2x.jpg 2x"
                     src="./images/taxi-service.jpg"
                     alt="Taxi dashboard"
                     width="360"
@@ -176,6 +271,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/screen-illustrations.jpg 1x, ./images/screen-illustrations@2x.jpg 2x"
                     src="./images/screen-illustrations.jpg"
                     alt="Screen Illustrations art"
                     width="360"
@@ -197,6 +293,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/screen-illustrations.jpg 1x, ./images/screen-illustrations@2x.jpg 2x"
                     src="./images/online-courses.jpg"
                     alt="Student girl"
                     width="360"
@@ -218,6 +315,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/instagram-stories-concept.jpg 1x, ./images/instagram-stories-concept@2x.jpg 2x"
                     src="./images/instagram-stories-concept.jpg"
                     alt="Samples of Instagram Stories"
                     width="360"
@@ -241,7 +339,8 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
-                    src="./images/organic-food.jpg"
+                  srcset="./images/organic-food.jpg 1x, ./images/organic-food@2x.jpg 2x"
+                  src="./images/organic-food.jpg"
                     alt="Organic Food in the bag"
                     width="360"
                     height="300"
@@ -262,6 +361,7 @@
               <a href="" class="solution-result-wrap link">
                 <div class="solution-picture-overlay">
                   <img
+                  srcset="./images/fresh-coffee.jpg 1x, ./images/fresh-coffee@2x.jpg 2x"
                     src="./images/fresh-coffee.jpg"
                     alt=""
                     width="360"
@@ -358,5 +458,15 @@
         </div>
       </div>
     </footer>
+       <!-- ====================================== Modal window script ======================================  -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
   </body>
 </html>
