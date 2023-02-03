@@ -65,6 +65,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body-text-color);
+  background-color: var(--primary-background-color);
 }
 
 .link {
@@ -79,20 +80,18 @@ body {
 /*========================================== Header ==========================================*/
 .header {
   background-color: var(--primary-background-color);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent-background-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
   height: 70px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  /* width: 100%; */
 }
 
 .header-logo {
@@ -125,8 +124,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dakr-overlays-headings);
-  /* padding-top: 24px;
-  padding-bottom: 28px; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -176,19 +173,15 @@ body {
   padding: 0;
 }
 .open-menu-btn-icon {
-  stroke: #2e2f42;
+  stroke: var(--dakr-overlays-headings);
 }
 
 .close-menu-btn-icon {
-  /* display: block; */
-
   fill: #000000;
-  background: #e7e9fc;
+  background: var(--accent-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-
-/*========================================== /Header ==========================================*/
 
 /* ================================= Mobile menu Navigation ================================= */
 
@@ -203,7 +196,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 80px 40px 40px;
-  background: #ffffff;
+  background: var(--primary-background-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transform: translateX(100%);
@@ -223,7 +216,7 @@ body {
   align-items: center;
   width: 24px;
   height: 24px;
-  background: #e7e9fc;
+  background: var(--accent-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -260,17 +253,17 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dakr-overlays-headings);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 .mobile-menu-link.current {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 /* ========== Mobile Menu Contacts ========== */
@@ -281,7 +274,7 @@ body {
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.01em;
-  color: #4d5ae5;
+  color: var(--primary-brand-color);
   margin-bottom: 40px;
 }
 
@@ -291,14 +284,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--body-text-color);
   margin-bottom: 48px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-contact-mail:hover,
 .mobile-menu-contact-mail:focus {
-  color: #4d5ae5;
+  color: var(--primary-brand-color);
 }
 
 /* ========== Mobile Menu Media ========== */
@@ -318,11 +311,11 @@ body {
   height: 40px;
   border: none;
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-social-media-icon {
-  fill: #f4f4fd;
+  fill: var(--primary-brand-color);
 }
 
 .mobile-social-media-link:hover,
@@ -360,7 +353,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--primary-background-color);
 }
 
 .solution-btn {
@@ -370,7 +363,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--primary-background-color);
   background-color: var(--primary-brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
@@ -417,7 +410,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dakr-overlays-headings);
   margin-bottom: 8px;
 }
 
@@ -426,13 +419,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--body-text-color);
 }
 
 .principles-icons {
   display: none;
   padding: 24px 100px;
-  background: #f4f4fd;
+  background: var(--light-bacground-color);
   border-radius: 4px;
   margin-bottom: 8px;
   width: 264px;
@@ -489,7 +482,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dakr-overlays-headings);
 }
 
 .team-list {
@@ -730,7 +723,7 @@ body {
   border-radius: 4px;
   outline: none;
   padding: 8px 16px;
-  color: #ffffff;
+  color: var(--primary-background-color);
   margin-bottom: 16px;
 }
 
@@ -753,7 +746,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-background-color);
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -766,7 +759,7 @@ body {
 }
 
 .subscribe-btn-icon {
-  fill: #f4f4fd;
+  fill: var(--light-bacground-color);
 }
 
 /* =========================================Backdrop========================================= */
@@ -812,7 +805,7 @@ body {
   align-items: center;
   width: 24px;
   height: 24px;
-  background-color: #e7e9fc;
+  background-color: var(--accent-background-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -851,7 +844,7 @@ body.modal-shown {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dakr-overlays-headings);
   margin-bottom: 14px;
 }
 
@@ -863,7 +856,7 @@ body.modal-shown {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
   margin-bottom: 4px;
 }
 
@@ -893,17 +886,17 @@ body.modal-shown {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  fill: #2e2f42;
+  fill: var(--dakr-overlays-headings);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-feedback-input:focus,
 .input-text-input:focus {
-  border-color: #4d5ae5;
+  border-color: var(--primary-brand-color);
 }
 
 .input-text-input:focus + .input-text-icon {
-  fill: #4d5ae5;
+  fill: var(--primary-brand-color);
 }
 
 /* ================== Feedback ================== */
@@ -946,7 +939,7 @@ textarea {
 }
 .modal-terms-text .link {
   text-decoration-line: underline;
-  color: #4d5ae5;
+  color: var(--primary-brand-color);
 }
 
 .modal-terms-icon {
@@ -954,18 +947,19 @@ textarea {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  border: 1.25px solid #2e2f42;
+  border: 1.25px solid var(--dakr-overlays-headings);
   border-radius: 2px;
   fill: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-terms-check:checked + .modal-terms-text .modal-terms-icon {
-  background-color: #404bbf;
-  fill: #f4f4fd;
-  border-color: #404bbf;
+  background-color: var(--pressed-state-color);
+  fill: var(--light-bacground-color);
+  border-color: var(--pressed-state-color);
 }
 
 /* =================== Submit =================== */
@@ -983,14 +977,14 @@ textarea {
 .modal-submit-btn {
   width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  background: var(--primary-brand-color);
   border-radius: 4px;
   border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--primary-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1003,7 +997,6 @@ textarea {
 /*====================================== Potrfolio.html ======================================*/
 
 .solutions-portfolio {
-  background-color: var(--primary-background-color);
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -1085,11 +1078,11 @@ textarea {
   height: 100%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light-bacground-color);
   padding: 40px 32px;
 }
 

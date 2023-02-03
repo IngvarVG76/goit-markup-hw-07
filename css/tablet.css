@@ -3,9 +3,14 @@
     max-width: 768px;
   }
 
+  /*========================================== Header ==========================================*/
+  .header {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+
   .header-navigation {
     display: flex;
-    padding-bottom: 10px;
   }
   .open-menu-btn {
     display: none;
@@ -15,8 +20,6 @@
   }
   .header-nav-conteiner {
     align-items: flex-start;
-    padding-top: 24px;
-    padding-bottom: 10px;
   }
   .header-contacts {
     display: block;

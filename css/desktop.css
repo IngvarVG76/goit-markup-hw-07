@@ -2,6 +2,17 @@
   .container {
     max-width: 1158px;
   }
+  /*========================================== Header ==========================================*/
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 28px;
+    height: 76px;
+  }
+
+  .header-link.current::after {
+    bottom: -29px;
+  }
 
   .header-contacts {
     display: flex;
