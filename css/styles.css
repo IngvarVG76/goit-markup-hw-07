@@ -53,7 +53,7 @@ img {
 }
 
 .container {
-  width: 100%vw;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -333,11 +333,9 @@ body {
 /* =====================Section 1 Effective Solutions for Your Business===================== */
 
 .solutions {
-}
-
-.solution-container {
-  margin: 0 auto;
   max-width: 100%;
+  padding: 112px 15px;
+  margin: 0 auto;
   background-color: var(--dakr-overlays-headings);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -346,7 +344,9 @@ body {
     url(../images/people-office-mobile.jpg);
   background-size: cover;
   background-position: center;
-  padding: 112px 54px;
+}
+
+.solution-container {
   text-align: center;
 }
 
@@ -383,13 +383,18 @@ body {
 .solution-btn:hover {
   background-color: var(--pressed-state-color);
 }
-/* =====================/Section 1 Effective Solutions for Your Business===================== */
 
 /*================================ Secrtion 2 Main principles ================================*/
 
-.principles-container {
-  padding: 96px 16px;
+.principles {
+  padding: 96px 0;
   background-color: var(--primary-background-color);
+}
+
+.principles-item {
+}
+
+.principles-container {
 }
 
 .principles-list {
@@ -438,8 +443,7 @@ body {
 
 .what {
   display: none;
-  padding-top: 60px;
-  padding-bottom: 120px;
+  padding: 60px 0 120px;
   background-color: var(--primary-background-color);
 }
 
@@ -470,11 +474,10 @@ body {
 
 .team {
   background-color: var(--light-bacground-color);
+  padding: 96px 0 128px;
 }
 
 .team-container {
-  padding-top: 96px;
-  padding-bottom: 128px;
 }
 
 .team-head {
@@ -563,10 +566,10 @@ body {
 /*====================================== Customers section ======================================*/
 
 .customers {
+  padding: 96px 0px;
   background-color: var(--primary-background-color);
 }
 .customers-container {
-  padding: 96px 0px;
   text-align: center;
 }
 
@@ -590,15 +593,11 @@ body {
   column-gap: 24px;
 }
 
-.customer-item {
-  width: calc(100% - 16px) / 2;
-}
-
 .customer-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
@@ -632,9 +631,9 @@ body {
 }
 
 .footer-logo-slogan {
-  /* display: block; */
-  /* text-align: center; */
+  margin-bottom: 72px;
 }
+
 .footer-logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -660,12 +659,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 72px;
 }
 
 /* ========== Media ========== */
 
 .social-media {
+  margin-bottom: 72px;
 }
 .social-media-title {
   font-weight: 500;
@@ -681,7 +680,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .social-media-item {
@@ -783,21 +781,26 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
+  overflow-y: auto;
 }
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
-  /* height: 584px; */
+  width: 95%;
+  height: auto;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 24px;
-  overflow: auto;
+  padding: 72px 16px 24px;
+}
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
 }
 
 .modal-close-btn {
@@ -832,6 +835,10 @@ body {
   fill: var(--primary-background-color);
 }
 
+body.modal-shown {
+  height: 100%;
+  overflow-y: hidden;
+}
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -925,24 +932,25 @@ textarea {
 
 /* ================== Terms ================== */
 .modal-terms {
-  display: flex;
-  align-content: center;
   margin-top: 16px;
   margin-bottom: 24px;
 }
 
-.modal-terms-text {
-  display: flex;
-  align-content: center;
+.modal-terms-text p {
+  display: inline;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
 }
+.modal-terms-text .link {
+  text-decoration-line: underline;
+  color: #4d5ae5;
+}
 
-.modal-terms-text .modal-terms-svg {
-  text-align: center;
+.modal-terms-icon {
+  vertical-align: sub;
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -954,20 +962,10 @@ textarea {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-terms-check:checked + .modal-terms-text .modal-terms-svg {
+.modal-terms-check:checked + .modal-terms-text .modal-terms-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
   border-color: #404bbf;
-}
-
-.modal-terms-link .link {
-  margin-left: 3pt;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-  color: #4d5ae5;
 }
 
 /* =================== Submit =================== */
@@ -1065,6 +1063,11 @@ textarea {
 
 .solution-result-wrap {
   display: block;
+}
+
+.solution-picture-img {
+  width: 396px;
+  height: 280px;
 }
 
 .solution-picture-overlay {

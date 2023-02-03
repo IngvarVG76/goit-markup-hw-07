@@ -10,9 +10,11 @@
     margin-left: auto;
     gap: 40px;
   }
+
   .header-list {
     margin-left: 76px;
   }
+
   .header-contact-link {
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -21,6 +23,16 @@
 
   /* ================== Section 1 Effective Solutions for Your Busines ===================== */
 
+  .solutions {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
   .solutions-title {
     max-width: 496px;
     font-size: 56px;
@@ -28,55 +40,72 @@
     letter-spacing: 0.02em;
   }
 
-  /* ================== Section 1 Effective Solutions for Your Busines ===================== */
-
   /*================================ Secrtion 2 Main principles ================================*/
+
+  .principles {
+    padding: 96px 0 60px;
+  }
 
   .principles-icons {
     display: revert;
   }
+
   .principles-list {
     flex-wrap: nowrap;
     gap: 24px;
   }
+
+  .principles-item {
+    width: 264px;
+  }
+
   .principles-title {
     text-align: start;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
+
+  .principles-text {
+    font-weight: 400;
+  }
+
   /*=============================== Section 3 What are we doing ===============================*/
 
   .what {
     display: revert;
   }
+
   /*==================================== Section 4 Our Team ====================================*/
 
-  .team-container.container {
-    max-width: 1158px;
+  .team {
+    padding: 120px 0;
   }
 
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
   }
+
   /*====================================== Customers section ======================================*/
 
-  .customers-container.container {
-    max-width: 1158px;
-  }
-
-  .customers-container {
+  .customers {
     padding: 120px 0px;
   }
+
   .customer-list {
     flex-wrap: nowrap;
     gap: 24px;
   }
+
   /*====================================== Footer section ======================================*/
 
+  .footer {
+    padding: 100px 0;
+  }
+
   .footer-container.container {
-    max-width: 1158px;
+    /* max-width: 1158px; */
   }
   .footer-container {
     flex-wrap: nowrap;
@@ -89,17 +118,17 @@
   .subscription-wrap {
     margin-left: auto;
   }
+
+  .footer-logo-slogan {
+    margin-bottom: 0;
+  }
+
+  .social-media {
+    margin-bottom: 0;
+  }
+
   .modal {
     width: 408px;
-  }
-  .solution-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    padding-top: 188px;
-    padding-bottom: 188px;
   }
 
   /*====================================== Potrfolio.html ======================================*/
@@ -119,12 +148,16 @@
   .solution-result-item {
     width: 360px;
   }
+  .solution-picture-img {
+    width: 360px;
+    height: 300px;
+  }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .solution-container {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .solution {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)

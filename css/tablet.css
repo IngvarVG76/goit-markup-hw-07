@@ -19,15 +19,28 @@
     padding-bottom: 10px;
   }
   .header-contacts {
-    display: revert;
+    display: block;
+  }
+
+  .modal {
+    width: 408px;
   }
 
   /* ================== Section 1 Effective Solutions for Your Busines ===================== */
 
-  /*================================ Secrtion 2 Main principles ================================*/
+  .solutions {
+    padding: 112px 0 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
 
+  /*================================ Secrtion 2 Main principles ================================*/
+  .principles {
+  }
   .principles-container {
-    padding: 96px 0px;
   }
   .principles-list {
     display: flex;
@@ -38,18 +51,21 @@
   }
 
   .principles-item {
-    max-width: 356px;
+    width: 356px;
   }
 
   .principles-title {
     text-align: start;
   }
-  /*=============================== NOT SHOWN Section 3 What are we doing ===============================*/
 
   /*==================================== Section 4 Our Team ====================================*/
 
+  .team {
+    padding: 96px 0 104px;
+  }
+
   .team-container.container {
-    max-width: 660px;
+    /* max-width: 660px; */
   }
 
   .team-list {
@@ -62,9 +78,6 @@
 
   /*====================================== Customers section ======================================*/
 
-  .customers-container.container {
-    max-width: 660px;
-  }
   .customer-list {
     display: flex;
     flex-wrap: wrap;
@@ -73,17 +86,22 @@
     row-gap: 72px;
     column-gap: 24px;
   }
+  .customer-link {
+    width: 168px;
+    height: 88px;
+  }
 
   /*====================================== Footer section ======================================*/
 
-  .footer-container.container {
-    max-width: 660px;
+  .footer {
+    padding: 96px 93px;
   }
 
   .footer-container {
     display: flex;
     flex-wrap: wrap;
   }
+
   .footer-logo-slogan {
     text-align: left;
     margin-right: 24px;
@@ -104,17 +122,10 @@
   .subscription-form-input {
     width: 264px;
     height: 40px;
-
     margin-right: 24px;
     margin-bottom: 0;
   }
-  .solution-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-tablet.jpg);
-  }
+
   /*====================================== Potrfolio.html ======================================*/
 
   .solutions-portfolio {
@@ -132,15 +143,20 @@
     justify-content: flex-start;
     gap: 72px 24px;
   }
+
   .solution-result-item {
     width: 356px;
   }
+  .solution-picture-img {
+    width: 356px;
+    height: 300px;
+  }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .solution-container {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .solutions {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
