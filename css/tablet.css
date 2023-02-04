@@ -97,14 +97,16 @@
   /*====================================== Footer section ======================================*/
 
   .footer {
-    padding: 96px 93px;
+    padding: 96px 0;
+  }
+  .footer-container.container {
+    max-width: 582px;
   }
 
   .footer-container {
     display: flex;
     flex-wrap: wrap;
   }
-
   .footer-logo-slogan {
     text-align: left;
     margin-right: 24px;

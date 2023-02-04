@@ -339,6 +339,7 @@ body {
   background-position: center;
 }
 
+
 .solution-container {
   text-align: center;
 }
@@ -583,7 +584,7 @@ body {
   justify-content: center;
   align-items: center;
   row-gap: 72px;
-  column-gap: 24px;
+  column-gap: 16px;
 }
 
 .customer-link {
