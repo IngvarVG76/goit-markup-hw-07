@@ -315,7 +315,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-social-media-icon {
-  fill: var(--primary-brand-color);
+  fill: var(--primary-background-color);
 }
 
 .mobile-social-media-link:hover,
